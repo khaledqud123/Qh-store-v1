@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QH Gaming Store | Gaming Gear & Accessories</title>
+    <meta
+        name="description"
+        content="QH Gaming Store — gaming consoles, accessories, games and gear."
+    >
+    <meta name="theme-color" content="#07080c">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND EFFECTS
+    ========================== -->
+
+    <div class="background-grid"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo" aria-label="QH Gaming Store home">
+                <span class="logo-mark">QH</span>
+                <span class="logo-text">
+                    <strong>QH</strong>
+                    <small>GAMING STORE</small>
+                </span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button
+                    class="icon-button search-toggle"
+                    aria-label="Open search"
+                    type="button"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M20 20l-4-4"></path>
+                    </svg>
+                </button>
+
+                <button
+                    class="cart-button"
+                    id="cartButton"
+                    aria-label="Open shopping cart"
+                    type="button"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 4h2l2.2 11h10.9L21 7H6"></path>
+                        <circle cx="9" cy="20" r="1.3"></circle>
+                        <circle cx="18" cy="20" r="1.3"></circle>
+                    </svg>
+
+                    <span>Cart</span>
+                    <b id="cartCount">0</b>
+                </button>
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    type="button"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile navigation -->
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         SEARCH OVERLAY
+    ========================== -->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <div class="search-box">
+
+            <button
+                class="search-close"
+                id="searchClose"
+                aria-label="Close search"
+                type="button"
+            >
+                ×
+            </button>
+
+            <span class="eyebrow">SEARCH QH GAMING</span>
+
+            <h2>What are you looking for?</h2>
+
+            <div class="search-input-wrapper">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="M20 20l-4-4"></path>
+                </svg>
+
+                <input
+                    id="searchInput"
+                    type="search"
+                    placeholder="Search products..."
+                    autocomplete="off"
+                >
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero" id="home">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        GAMING STARTS HERE
+                    </div>
+
+                    <h1>
+                        LEVEL UP
+                        <span>YOUR GAME.</span>
+                    </h1>
+
+                    <p>
+                        Discover gaming gear, accessories and essentials
+                        built for players who take their setup seriously.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#products" class="button button-primary">
+                            Shop Now
+                            <span>→</span>
+                        </a>
+
+                        <a href="#categories" class="button button-secondary">
+                            Explore Categories
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>Gaming Focused</span>
+                        </div>
+
+                        <div>
+                            <strong>LOCAL</strong>
+                            <span>Jordan Based</span>
+                        </div>
+
+                        <div>
+                            <strong>QH</strong>
+                            <span>Gaming Store</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual reveal">
+
+                    <div class="hero-glow"></div>
+
+                    <div class="hero-card">
+
+                        <div class="hero-card-top">
+                            <span>FEATURED</span>
+                            <span>QH-01</span>
+                        </div>
+
+                        <div class="controller-placeholder">
+
+                            <div class="controller-body">
+
+                                <div class="controller-top"></div>
+
+                                <div class="stick stick-left"></div>
+                                <div class="stick stick-right"></div>
+
+                                <div class="dpad">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+
+                                <div class="buttons">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="hero-card-bottom">
+                            <div>
+                                <small>QH GAMING</small>
+                                <strong>YOUR NEXT<br>LEVEL AWAITS.</strong>
+                            </div>
+
+                            <span class="hero-arrow">↗</span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-tag tag-one">
+                        <span>⚡</span>
+                        PERFORMANCE
+                    </div>
+
+                    <div class="floating-tag tag-two">
+                        <span>🎮</span>
+                        GAMING GEAR
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORIES
+        ========================== -->
+
+        <section class="section categories-section" id="categories">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="eyebrow">SHOP BY CATEGORY</span>
+                        <h2>Built for <span>every player.</span></h2>
+                    </div>
+
+                    <p>
+                        Find the gear that fits your game,
+                        your setup and your style.
+                    </p>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <button
+                        class="category-card reveal"
+                        data-category="Consoles"
+                        type="button"
+                    >
+                        <div class="category-icon">🎮</div>
+                        <span>01</span>
+                        <h3>Consoles</h3>
+                        <p>PlayStation, Xbox & more</p>
+                        <b>→</b>
+                    </button>
+
+                    <button
+                        class="category-card reveal"
+                        data-category="Controllers"
+                        type="button"
+                    >
+                        <div class="category-icon">🕹️</div>
+                        <span>02</span>
+                        <h3>Controllers</h3>
+                        <p>Precision in your hands</p>
+                        <b>→</b>
+                    </button>
+
+                    <button
+                        class="category-card reveal"
+                        data-category="Headsets"
+                        type="button"
+                    >
+                        <div class="category-icon">🎧</div>
+                        <span>03</span>
+                        <h3>Headsets</h3>
+                        <p>Hear every detail</p>
+                        <b>→</b>
+                    </button>
+
+                    <button
+                        class="category-card reveal"
+                        data-category="Accessories"
+                        type="button"
+                    >
+                        <div class="category-icon">⚡</div>
+                        <span>04</span>
+                        <h3>Accessories</h3>
+                        <p>Upgrade your setup</p>
+                        <b>→</b>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRODUCTS
+        ========================== -->
+
+        <section class="section products-section" id="products">
+
+            <div class="container">
+
+                <div class="section-heading products-heading reveal">
+
+                    <div>
+                        <span class="eyebrow">QH COLLECTION</span>
+                        <h2>Featured <span>gear.</span></h2>
+                    </div>
+
+                    <div class="filter-buttons">
+
+                        <button
+                            class="filter-button active"
+                            data-filter="All"
+                            type="button"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="Consoles"
+                            type="button"
+                        >
+                            Consoles
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="Controllers"
+                            type="button"
+                        >
+                            Controllers
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="Headsets"
+                            type="button"
+                        >
+                            Headsets
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            data-filter="Accessories"
+                            type="button"
+                        >
+                            Accessories
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="products-grid" id="productsGrid">
+
+                    <!-- Product 1 -->
+
+                    <article
+                        class="product-card reveal"
+                        data-category="Consoles"
+                        data-name="PlayStation 5 Console"
+                    >
+
+                        <div class="product-image product-image-console">
+
+                            <span class="product-badge">POPULAR</span>
+
+                            <div class="product-visual ps5">
+                                <div class="console-main"></div>
+                                <div class="console-base"></div>
+                            </div>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                                data-product="PlayStation 5 Console"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">CONSOLES</span>
+
+                            <h3>PlayStation 5 Console</h3>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    <span>From</span>
+                                    <strong>499 JOD</strong>
+                                </div>
+
+                                <button
+                                    class="add-cart"
+                                    data-id="ps5"
+                                    data-name="PlayStation 5 Console"
+                                    data-price="499"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 2 -->
+
+                    <article
+                        class="product-card reveal"
+                        data-category="Controllers"
+                        data-name="DualSense Wireless Controller"
+                    >
+
+                        <div class="product-image product-image-controller">
+
+                            <span class="product-badge">HOT</span>
+
+                            <div class="controller-placeholder small">
+                                <div class="controller-body">
+                                    <div class="controller-top"></div>
+                                    <div class="stick stick-left"></div>
+                                    <div class="stick stick-right"></div>
+                                    <div class="dpad">
+                                        <i></i><i></i><i></i><i></i>
+                                    </div>
+                                    <div class="buttons">
+                                        <i></i><i></i><i></i><i></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                                data-product="DualSense Wireless Controller"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">CONTROLLERS</span>
+
+                            <h3>DualSense Wireless Controller</h3>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    <span>Price</span>
+                                    <strong>69 JOD</strong>
+                                </div>
+
+                                <button
+                                    class="add-cart"
+                                    data-id="dualsense"
+                                    data-name="DualSense Wireless Controller"
+                                    data-price="69"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 3 -->
+
+                    <article
+                        class="product-card reveal"
+                        data-category="Headsets"
+                        data-name="Gaming Headset Pro"
+                    >
+
+                        <div class="product-image product-image-headset">
+
+                            <span class="product-badge">NEW</span>
+
+                            <div class="headset-visual">
+                                <div class="headset-band"></div>
+                                <div class="earcup left"></div>
+                                <div class="earcup right"></div>
+                            </div>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                                data-product="Gaming Headset Pro"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">HEADSETS</span>
+
+                            <h3>Gaming Headset Pro</h3>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    <span>Price</span>
+                                    <strong>45 JOD</strong>
+                                </div>
+
+                                <button
+                                    class="add-cart"
+                                    data-id="headset"
+                                    data-name="Gaming Headset Pro"
+                                    data-price="45"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 4 -->
+
+                    <article
+                        class="product-card reveal"
+                        data-category="Accessories"
+                        data-name="RGB Gaming Keyboard"
+                    >
+
+                        <div class="product-image product-image-keyboard">
+
+                            <span class="product-badge">QH PICK</span>
+
+                            <div class="keyboard-visual">
+
+                                <div class="keyboard-row">
+                                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                                </div>
+
+                                <div class="keyboard-row">
+                                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                                </div>
+
+                                <div class="keyboard-row">
+                                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                                    <i></i><i></i><i></i><i></i>
+                                </div>
+
+                            </div>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                                data-product="RGB Gaming Keyboard"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">ACCESSORIES</span>
+
+                            <h3>RGB Gaming Keyboard</h3>
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+                                    <span>Price</span>
+                                    <strong>39 JOD</strong>
+                                </div>
+
+                                <button
+                                    class="add-cart"
+                                    data-id="keyboard"
+                                    data-name="RGB Gaming Keyboard"
+                                    data-price="39"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="no-results" id="noResults">
+                    <span>⌁</span>
+                    <h3>No products found</h3>
+                    <p>Try another search or category.</p>
+                </div>
+
+
+                <div class="center-button">
+                    <button class="button button-secondary" id="viewAllButton" type="button">
+                        View All Products
+                        <span>→</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURE STRIP
+        ========================== -->
+
+        <section class="feature-strip">
+
+            <div class="container feature-grid">
+
+                <div class="feature-item reveal">
+                    <span>01</span>
+                    <div>
+                        <strong>Gaming Focused</strong>
+                        <p>Everything selected with gamers in mind.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item reveal">
+                    <span>02</span>
+                    <div>
+                        <strong>Local Store</strong>
+                        <p>Shop locally and get the gear you need.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item reveal">
+                    <span>03</span>
+                    <div>
+                        <strong>Real Support</strong>
+                        <p>Talk to the people behind the store.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about-section" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-visual reveal">
+
+                    <div class="about-box">
+
+                        <div class="about-logo">
+                            <span>QH</span>
+                            <small>GAMING STORE</small>
+                        </div>
+
+                        <div class="about-lines"></div>
+
+                        <div class="about-number">
+                            <span>QH</span>
+                            <strong>GAME<br>ON.</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-content reveal">
+
+                    <span class="eyebrow">ABOUT QH</span>
+
+                    <h2>
+                        More than a store.
+                        <span>A gaming destination.</span>
+                    </h2>
+
+                    <p>
+                        QH Gaming Store is built around one simple idea:
+                        make it easier for gamers to find the equipment
+                        they actually want.
+                    </p>
+
+                    <p>
+                        From consoles and controllers to headsets and
+                        accessories, we're here to help you build a setup
+                        that feels like yours.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Get in touch
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta-section" id="contact">
+
+            <div class="container">
+
+                <div class="cta-card reveal">
+
+                    <div class="cta-content">
+
+                        <span class="eyebrow">READY PLAYER ONE?</span>
+
+                        <h2>
+                            Your next setup
+                            <span>starts here.</span>
+                        </h2>
+
+                        <p>
+                            Have a question about a product or want to
+                            check availability? Get in touch with QH.
+                        </p>
+
+                        <div class="cta-buttons">
+
+                            <a
+                                href="https://wa.me/"
+                                class="button button-primary"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                WhatsApp Us
+                                <span>↗</span>
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/"
+                                class="button button-secondary"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Instagram
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cta-mark">
+                        <span>QH</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo">
+
+                        <span class="logo-mark">QH</span>
+
+                        <span class="logo-text">
+                            <strong>QH</strong>
+                            <small>GAMING STORE</small>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Level up your game.
+                        Build your setup.
+                        Play your way.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Navigate</h4>
+
+                    <a href="#home">Home</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#products">Products</a>
+                    <a href="#about">About</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Categories</h4>
+
+                    <a href="#products" data-footer-filter="Consoles">Consoles</a>
+                    <a href="#products" data-footer-filter="Controllers">Controllers</a>
+                    <a href="#products" data-footer-filter="Headsets">Headsets</a>
+                    <a href="#products" data-footer-filter="Accessories">Accessories</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Connect</h4>
+
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                        Instagram ↗
+                    </a>
+
+                    <a href="https://wa.me/" target="_blank" rel="noopener">
+                        WhatsApp ↗
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="currentYear"></span> QH Gaming Store.
+                    All rights reserved.
+                </span>
+
+                <span>
+                    Designed for gamers.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         CART DRAWER
+    ========================== -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+
+            <div>
+                <span class="eyebrow">YOUR SELECTION</span>
+                <h2>Your Cart</h2>
+            </div>
+
+            <button
+                class="drawer-close"
+                id="cartClose"
+                type="button"
+                aria-label="Close cart"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+
+                <div class="empty-cart-icon">🛒</div>
+
+                <h3>Your cart is empty</h3>
+
+                <p>
+                    Add some gaming gear and it'll show up here.
+                </p>
+
+                <button
+                    class="button button-secondary"
+                    id="startShopping"
+                    type="button"
+                >
+                    Start Shopping
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">0 JOD</strong>
+            </div>
+
+            <button
+                class="checkout-button"
+                id="checkoutButton"
+                type="button"
+            >
+                Continue to Checkout
+                <span>→</span>
+            </button>
+
+            <small>
+                Checkout functionality can be connected to the
+                store's preferred payment/order system.
+            </small>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         PRODUCT MODAL
+    ========================== -->
+
+    <div class="modal-overlay" id="productModal">
+
+        <div class="product-modal">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                type="button"
+                aria-label="Close product"
+            >
+                ×
+            </button>
+
+            <div class="modal-image" id="modalImage"></div>
+
+            <div class="modal-content">
+
+                <span class="eyebrow" id="modalCategory">
+                    PRODUCT
+                </span>
+
+                <h2 id="modalTitle">Product</h2>
+
+                <p id="modalDescription">
+                    Premium gaming equipment selected for your setup.
+                </p>
+
+                <div class="modal-price" id="modalPrice">
+                    0 JOD
+                </div>
+
+                <button
+                    class="button button-primary modal-add"
+                    id="modalAdd"
+                    type="button"
+                >
+                    Add to Cart
+                    <span>+</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div class="toast" id="toast">
+
+        <span class="toast-icon">✓</span>
+
+        <div>
+            <strong id="toastTitle">Added to cart</strong>
+            <small id="toastText">Product added successfully.</small>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
